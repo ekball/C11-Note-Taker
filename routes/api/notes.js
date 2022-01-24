@@ -11,8 +11,8 @@ router.get('/notes', (req, res) => {
     res.json(notesJSON);
 });
 
-// get particular note based on id
-router.get('/notes/:id', (req, res) => {
+// create a new note based on id
+router.post('/notes/:id', (req, res) => {
 
     // set unique id to body parameter
     req.body.id = uuidv4();
@@ -35,14 +35,6 @@ router.get('/notes/:id', (req, res) => {
         console.log('New note was created');
         res.JSON(res);
     }
-});
-
-// create a new note and add to db.json
-router.post('/notes', (req, res) => {
-    req.body.id = notes.length.toString();
-
-    const note = createNewNote(req.body, notes);
-    res.json(note);
 });
 
 module.exports = router;
