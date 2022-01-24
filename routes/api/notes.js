@@ -11,29 +11,33 @@ router.get('/notes', (req, res) => {
     res.json(notesJSON);
 });
 
-// create a new note based on id
-router.post('/notes/:id', (req, res) => {
+// create a new note and assign a unique id
+router.post('/notes', (req, res) => {
 
     // set unique id to body parameter
     req.body.id = uuidv4();
 
-    // check values of req.body.id & req.body
-    console.log('req.body.id = ', req.body.id);
-    console.log('req.body', req.body);
+    // check values of req.body
+    // console.log('req.body = ', req.body);
 
+    // assign the body to a variable
+    const newNote = req.body
+    
+    // check the value of the note
+    // console.log('new Note = ', newNote)
+        
     // add whatever is in the body to the array
-    notesJSON.push(req.body);
+    notesJSON.push(newNote);
 
-    // update the file to create new note
-    fs.writeFileSync( path.join(__dirname, '../../db/db.json'),
-        // stringify new notesJSON array
+    fs.writeFileSync(
+        path.join(__dirname, '../../db/db.json'), 
         JSON.stringify(notesJSON)
     )
 
-    // check if response was successful; if so, let user know
-    if (res) {
-        console.log('New note was created');
-        res.JSON(res);
+    // if response was successful, let user know and complete request 
+    if(res) {
+        console.log(`new note created`)
+        return res.json()
     }
 });
 

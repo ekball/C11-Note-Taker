@@ -10,10 +10,10 @@
 
 ## GitHub Links (Repository and Demo Video)
 
-    The repository link: https://github.com/ekball/C13-E-Commerce
+    The repository link: https://github.com/ekball/C11-Note-Taker
 
     The demo video link: https://watch.screencastify.com/v/Q9Imj9urCIiHLs08z6LB
 
 ## Demo README
 
-![demo-employee-tracker](./assets/images/screenshot.png)
+![demo-note-taker](./assets/images/screenshot.png)
