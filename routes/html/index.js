@@ -3,7 +3,7 @@ const router = require('express').Router();
 
 // send users to the notes page
 router.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/notes.js'));
+  res.sendFile(path.join(__dirname, '../../public/notes.html'));
 });
 
 // send users to the index page
