@@ -12,7 +12,7 @@
 
     The repository link: https://github.com/ekball/C11-Note-Taker
 
-    The demo video link: https://watch.screencastify.com/v/Q9Imj9urCIiHLs08z6LB
+    The deployed site link: https://whispering-springs-16433.herokuapp.com/
 
 ## Demo README
 
