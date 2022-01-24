@@ -5,6 +5,7 @@ const notesJSON = require('../../db/db.json');
 
 // unique id package = uuid
 const {v4: uuidv4} = require('uuid');
+const req = require('express/lib/request');
 
 // get all notes
 router.get('/notes', (req, res) => {
@@ -40,5 +41,14 @@ router.post('/notes', (req, res) => {
         return res.json()
     }
 });
+
+// delete the selected note via id
+// router.delete('/notes/:id', (req, res) => {
+
+//     const thisIndex = notesJSON.findIndex(thisNote=> thisNote.id === id);
+//     if (thisIndex > -1) {
+//       notesJSON.splice(thisIndex, 1);
+//     }
+// });
 
 module.exports = router;
