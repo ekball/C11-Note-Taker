@@ -6,7 +6,7 @@
 
 ## Experience Gained
 
-    After returning to this challenge a few weeks later, it was not particularly difficult. Writing routes seems much easier after understanding how they connect to more complicated challenges (like Challenge #13). However, it took a few minutes to review how they were written 
+    After returning to this challenge a few weeks later, it was not particularly difficult. Writing routes seems much easier after understanding how they connect to more complicated challenges (like Challenge #13). However, it took a few minutes to review how they were written without a MySQL database creating the unique id's automatically.
 
 ## GitHub Links (Repository and Demo Video)
 
